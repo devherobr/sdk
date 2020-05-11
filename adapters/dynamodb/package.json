@@ -31,6 +31,7 @@
     "ci:leaf": "nyc --reporter=lcovonly npm run test:leaf && codecov"
   },
   "devDependencies": {
-    "aws-sdk": "^2.673.0"
+    "aws-sdk": "^2.673.0",
+    "aws-sdk-mock": "^5.1.0"
   }
 }
