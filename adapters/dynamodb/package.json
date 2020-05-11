@@ -1,13 +1,13 @@
 {
-  "name": "@devherobr/sample-lib",
-  "version": "1.1.9",
-  "description": "Sample component to publish on NPM",
+  "name": "@devherobr/adapters-dynamodb",
+  "version": "1.0.0",
+  "description": "Dynamodb data adapter",
   "author": "Luis Fernando Langa <langa.ads@gmail.com>",
   "license": "MIT",
-  "homepage": "https://github.com/devherobr/libraries#readme",
-  "repository": "git+https://github.com/devherobr/libraries.git",
+  "homepage": "https://github.com/devherobr/sdk#readme",
+  "repository": "git+https://github.com/devherobr/sdk.git",
   "bugs": {
-    "url": "https://github.com/devherobr/libraries/issues"
+    "url": "https://github.com/devherobr/sdk/issues"
   },
   "main": "./src/index.js",
   "files": [
@@ -29,5 +29,8 @@
     "test:leaf": "nyc mocha --recursive --colors",
     "watch:leaf": "npm run test:leaf -- --watch",
     "ci:leaf": "nyc --reporter=lcovonly npm run test:leaf && codecov"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.673.0"
   }
 }
